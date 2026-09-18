@@ -12,6 +12,7 @@
 | 006 | A 百分比 | 新增 `a_percent`；既有結果不變 | [報告](reports/006_a_percent.md) |
 | 007 | T 百分比 | 新增 `t_percent`；既有結果不變 | [報告](reports/007_t_percent.md) |
 | 008 | A/T 平衡 | 新增 `at_skew`；既有結果不變 | [報告](reports/008_at_skew.md) |
+| 009 | GC 與 50% 的差距 | 新增 `gc_deviation_pp`；既有結果不變 | [報告](reports/009_gc_deviation_pp.md) |
 
 001、002 對應先前的 GC% 與 AT% 開發；當時未建立此格式的報告，可在 Git 歷史查看。
 

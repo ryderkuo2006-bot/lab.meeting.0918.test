@@ -10,6 +10,7 @@
 | 3 | 不同長度不好比較，請加上 A%。 | `a_percent` | [報告](006_a_percent.md) | `runs/006_a_percent/` |
 | 4 | 也加上 T%，讓四種鹼基的資訊更完整。 | `t_percent` | [報告](007_t_percent.md) | `runs/007_t_percent/` |
 | 5 | 我也想知道 A 和 T 是否平衡，像 G/C 那樣比較。 | `at_skew` | [報告](008_at_skew.md) | `runs/008_at_skew/` |
+| 6 | 請標出 GC% 比 50% 高或低多少。 | `gc_deviation_pp` | [報告](009_gc_deviation_pp.md) | `runs/009_gc_deviation_pp/` |
 
 ## 更新順序
 

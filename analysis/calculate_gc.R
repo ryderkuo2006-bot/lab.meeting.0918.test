@@ -70,6 +70,9 @@ results$at_skew <- NA_real_
 has_at <- at_count > 0L
 results$at_skew[has_at] <- round((results$a_count[has_at] - results$t_count[has_at]) / at_count[has_at], 4)
 
+# GC 與 50% 的差距：GC% − 50，單位是百分點；50% 只是示範比較基準
+results$gc_deviation_pp <- round(gc_count / sequence_length_bp * 100 - 50, 2)
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)
