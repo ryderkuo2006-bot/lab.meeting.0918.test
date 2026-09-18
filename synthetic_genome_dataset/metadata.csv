@@ -1,0 +1,7 @@
+genome_id,sequence_length_bp,sample_name,organism,strain,collection_date,location,host,sequencing_platform,assembly_status,environment,notes
+genome_001,88,SYN-001,Example bacterium alpha,ALPHA-01,2025-01-14,Taipei-TW,human,Illumina NovaSeq,complete,urban water,synthetic demo record
+genome_002,88,SYN-002,Example bacterium beta,BETA-07,2025-02-03,Kaohsiung-TW,soil,Oxford Nanopore,complete,agricultural soil,synthetic demo record
+genome_003,88,SYN-003,Example bacterium gamma,GAMMA-12,2025-02-19,Hualien-TW,plant,Illumina MiSeq,draft,forest rhizosphere,synthetic demo record
+genome_004,88,SYN-004,Example bacterium delta,DELTA-03,2025-03-08,Taichung-TW,fish,PacBio Revio,complete,coastal seawater,synthetic demo record
+genome_005,89,SYN-005,Example bacterium epsilon,EPSILON-21,2025-03-27,Tainan-TW,poultry,Illumina NovaSeq,draft,animal-associated sample,synthetic demo record
+genome_006,89,SYN-006,Example bacterium zeta,ZETA-05,2025-04-11,Yilan-TW,insect,Oxford Nanopore,draft,forest litter,synthetic demo record
