@@ -56,6 +56,9 @@ results <- data.frame(
 # A 鹼基計數：整數計數
 results$a_count <- nchar(gsub("[^A]", "", sequences))
 
+# T 鹼基計數：整數計數
+results$t_count <- nchar(gsub("[^T]", "", sequences))
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)
