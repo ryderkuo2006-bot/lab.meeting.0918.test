@@ -1,6 +1,7 @@
 # 從專案根目錄執行：Rscript analysis/calculate_gc.R
 # 僅使用 R 內建功能，不需要安裝套件。
 # GC% = (G 的數量 + C 的數量) / 序列長度 * 100。
+# AT% = (A 的數量 + T 的數量) / 序列長度 * 100。
 
 input_file <- "synthetic_genome_dataset/genomes.fasta"
 output_file <- "analysis/results/gc_content.csv"
@@ -31,11 +32,14 @@ if (any(grepl("[^ACGT]", sequences))) {
 
 sequence_length_bp <- nchar(sequences)
 gc_count <- nchar(gsub("[^GC]", "", sequences))
+at_count <- nchar(gsub("[^AT]", "", sequences))
 results <- data.frame(
   genome_id = genome_ids,
   sequence_length_bp = sequence_length_bp,
   gc_count = gc_count,
-  gc_percent = round(gc_count / sequence_length_bp * 100, 2)
+  gc_percent = round(gc_count / sequence_length_bp * 100, 2),
+  at_count = at_count,
+  at_percent = round(at_count / sequence_length_bp * 100, 2)
 )
 
 dir.create(dirname(output_file), recursive = TRUE, showWarnings = FALSE)
