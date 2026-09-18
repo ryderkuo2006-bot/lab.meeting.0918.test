@@ -62,6 +62,9 @@ results$t_count <- nchar(gsub("[^T]", "", sequences))
 # A 百分比：A / 序列長度 × 100，取兩位小數
 results$a_percent <- round(results$a_count / sequence_length_bp * 100, 2)
 
+# T 百分比：T / 序列長度 × 100，取兩位小數
+results$t_percent <- round(results$t_count / sequence_length_bp * 100, 2)
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)
