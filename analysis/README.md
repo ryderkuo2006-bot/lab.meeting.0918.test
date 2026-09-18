@@ -55,5 +55,6 @@ Rscript analysis/calculate_gc.R runs/003_gc_skew > runs/003_gc_skew/run.log 2>&1
 - `length_rank`：長度由大至小排名；同分同名次，下一名跳號；原始列順序不變。
 - `gc_rank`：以未四捨五入的 GC 比例由大至小排名，同分同名次並跳號。
 - `longest_run_bp`：例如 AAAT 的值是 3；只計算連續相同字元的長度。
+- `dominant_bases`：同分全部列出，以 A/C/G/T 順序用 / 連接。
 
 每次保留既有欄位，新增欄位放在表格尾端。詳見 [十次模擬總覽](../reports/simulation_10.md)。

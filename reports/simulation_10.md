@@ -14,6 +14,7 @@
 | 7 | 哪條最長？加上長度排名，但不要改變原本列順序。 | `length_rank` | [報告](010_length_rank.md) | `runs/010_length_rank/` |
 | 8 | 再加上 GC 含量排名，同分也要保留。 | `gc_rank` | [報告](011_gc_rank.md) | `runs/011_gc_rank/` |
 | 9 | 有沒有連續重複的鹼基？加上最長連續相同鹼基的長度。 | `longest_run_bp` | [報告](012_longest_run_bp.md) | `runs/012_longest_run_bp/` |
+| 10 | 最後告訴我每条序列哪種鹼基最多，同分請全部列出。 | `dominant_bases` | [報告](013_dominant_bases.md) | `runs/013_dominant_bases/` |
 
 ## 更新順序
 

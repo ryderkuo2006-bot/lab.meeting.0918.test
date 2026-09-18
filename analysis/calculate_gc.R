@@ -82,6 +82,12 @@ results$gc_rank <- rank(-(gc_count / sequence_length_bp), ties.method = "min")
 # 最長連續相同鹼基：例如 AAAT 的值是 3；只計算連續相同字元的長度
 results$longest_run_bp <- vapply(strsplit(sequences, ""), function(bases) max(rle(bases)$lengths), integer(1))
 
+# 數量最多的鹼基：同分全部列出，以 A/C/G/T 順序用 / 連接
+results$dominant_bases <- vapply(strsplit(sequences, ""), function(bases) {
+  counts <- table(factor(bases, levels = c("A", "C", "G", "T")))
+  paste(names(counts)[counts == max(counts)], collapse = "/")
+}, character(1))
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)
