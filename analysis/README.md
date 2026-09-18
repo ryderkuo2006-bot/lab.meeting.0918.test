@@ -27,3 +27,19 @@ GC% = (G + C 的數量) / 序列長度 × 100，取小數點後兩位。
 AT% = (A + T 的數量) / 序列長度 × 100，取小數點後兩位。
 CSV 的 `at_count` 與 `at_percent` 欄位分別記錄 A/T 鹼基數與 AT 百分比。
 程式支援多行與小寫序列；若有 A、C、G、T 以外的字元會停止並提示。
+
+## G/C 平衡與本機執行紀錄
+
+新增 `g_count`、`c_count` 與 `gc_skew = (G - C) / (G + C)`。
+正值表示 G 較多、負值表示 C 較多；沒有 G/C 時輸出 NA。
+
+傳入本次執行的資料夾，可保留中間檔與 R 環境資訊：
+
+```bash
+mkdir -p runs/003_gc_skew
+Rscript analysis/calculate_gc.R runs/003_gc_skew > runs/003_gc_skew/run.log 2>&1
+```
+
+每次新分析請改用新的 run 名稱，避免覆蓋本機紀錄。
+`runs/` 不上傳 GitHub；小型結果仍更新在 `analysis/results/gc_content.csv`。
+本次改動與結果比較見 [分析報告](../reports/003_gc_skew.md)。

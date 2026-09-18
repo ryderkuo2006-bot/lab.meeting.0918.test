@@ -1,0 +1,23 @@
+# Lab meeting 分析示範
+
+以六條虛構短 DNA 序列，示範分析程式的修改、結果比較與 Git 版本紀錄。
+
+## 分析紀錄
+
+| 次數 | 使用者需求／改動 | 結果摘要 | 詳細紀錄 |
+|---|---|---|---|
+| 003 | 在 GC% / AT% 分析加入 G、C 計數與 GC skew | 原百分比不變；genome_004 的 G/C 差異最大 | [報告與結果比較](reports/003_gc_skew.md) |
+
+001、002 對應先前的 GC% 與 AT% 開發；當時未建立此格式的報告，可在 Git 歷史查看。
+
+## 檔案位置
+
+- [分析程式與操作說明](analysis/README.md)
+- [最新小型結果](analysis/results/gc_content.csv)
+- [原始合成資料說明](synthetic_genome_dataset/README.md)
+- [本機中間檔索引](reports/003_local_files.csv)：只上傳用途、大小與校驗值。
+- `runs/`：中間資料與執行快照，僅留在本機，不上傳。
+
+每次分析採用「程式＋簡短報告＋小型結果＋本機檔案索引」一起 commit、push。
+在 GitHub 點進 commit，可同時比較程式和結果的變化。
+新增分析時使用新的 run 名稱及報告檔，並在上表新增一列。
