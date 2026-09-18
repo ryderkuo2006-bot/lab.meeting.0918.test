@@ -43,3 +43,9 @@ Rscript analysis/calculate_gc.R runs/003_gc_skew > runs/003_gc_skew/run.log 2>&1
 每次新分析請改用新的 run 名稱，避免覆蓋本機紀錄。
 `runs/` 不上傳 GitHub；小型結果仍更新在 `analysis/results/gc_content.csv`。
 本次改動與結果比較見 [分析報告](../reports/003_gc_skew.md)。
+
+## 十次漸進新增功能
+
+- `a_count`：整數計數。
+
+每次保留既有欄位，新增欄位放在表格尾端。詳見 [十次模擬總覽](../reports/simulation_10.md)。
