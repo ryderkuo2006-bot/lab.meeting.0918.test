@@ -15,6 +15,7 @@
 | 009 | GC 與 50% 的差距 | 新增 `gc_deviation_pp`；既有結果不變 | [報告](reports/009_gc_deviation_pp.md) |
 | 010 | 序列長度排名 | 新增 `length_rank`；既有結果不變 | [報告](reports/010_length_rank.md) |
 | 011 | GC 含量排名 | 新增 `gc_rank`；既有結果不變 | [報告](reports/011_gc_rank.md) |
+| 012 | 最長連續相同鹼基 | 新增 `longest_run_bp`；既有結果不變 | [報告](reports/012_longest_run_bp.md) |
 
 001、002 對應先前的 GC% 與 AT% 開發；當時未建立此格式的報告，可在 Git 歷史查看。
 

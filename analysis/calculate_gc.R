@@ -79,6 +79,9 @@ results$length_rank <- rank(-sequence_length_bp, ties.method = "min")
 # GC 含量排名：以未四捨五入的 GC 比例由大至小排名，同分同名次並跳號
 results$gc_rank <- rank(-(gc_count / sequence_length_bp), ties.method = "min")
 
+# 最長連續相同鹼基：例如 AAAT 的值是 3；只計算連續相同字元的長度
+results$longest_run_bp <- vapply(strsplit(sequences, ""), function(bases) max(rle(bases)$lengths), integer(1))
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)

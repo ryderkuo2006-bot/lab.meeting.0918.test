@@ -13,6 +13,7 @@
 | 6 | 請標出 GC% 比 50% 高或低多少。 | `gc_deviation_pp` | [報告](009_gc_deviation_pp.md) | `runs/009_gc_deviation_pp/` |
 | 7 | 哪條最長？加上長度排名，但不要改變原本列順序。 | `length_rank` | [報告](010_length_rank.md) | `runs/010_length_rank/` |
 | 8 | 再加上 GC 含量排名，同分也要保留。 | `gc_rank` | [報告](011_gc_rank.md) | `runs/011_gc_rank/` |
+| 9 | 有沒有連續重複的鹼基？加上最長連續相同鹼基的長度。 | `longest_run_bp` | [報告](012_longest_run_bp.md) | `runs/012_longest_run_bp/` |
 
 ## 更新順序
 
