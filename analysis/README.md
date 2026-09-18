@@ -6,4 +6,22 @@
 - 分析程式存放在這個 `analysis/` 資料夾。
 - 建議從專案根目錄執行程式，方便使用一致的資料路徑。
 
-目前尚未加入分析程式。
+## 計算 GC%
+
+`calculate_gc.R` 使用 R 內建功能讀取 FASTA，計算每條序列的長度、G/C 鹼基數與 GC 百分比，不需要額外套件。
+
+在專案根目錄執行：
+
+```bash
+Rscript analysis/calculate_gc.R
+```
+
+也可以在 RStudio 將工作目錄設為專案根目錄，執行：
+
+```r
+source("analysis/calculate_gc.R")
+```
+
+結果會顯示在畫面上，並儲存至 `analysis/results/gc_content.csv`。
+GC% = (G + C 的數量) / 序列長度 × 100，取小數點後兩位。
+程式支援多行與小寫序列；若有 A、C、G、T 以外的字元會停止並提示。
