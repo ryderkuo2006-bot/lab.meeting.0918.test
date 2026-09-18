@@ -7,6 +7,7 @@
 |---|---|---|---|---|
 | 1 | 請把 A 的數量單獨列出來。 | `a_count` | [報告](004_a_count.md) | `runs/004_a_count/` |
 | 2 | 也加上 T 的數量，方便比較 A 和 T。 | `t_count` | [報告](005_t_count.md) | `runs/005_t_count/` |
+| 3 | 不同長度不好比較，請加上 A%。 | `a_percent` | [報告](006_a_percent.md) | `runs/006_a_percent/` |
 
 ## 更新順序
 

@@ -9,6 +9,7 @@
 | 003 | 在 GC% / AT% 分析加入 G、C 計數與 GC skew | 原百分比不變；genome_004 的 G/C 差異最大 | [報告與結果比較](reports/003_gc_skew.md) |
 | 004 | A 鹼基計數 | 新增 `a_count`；既有結果不變 | [報告](reports/004_a_count.md) |
 | 005 | T 鹼基計數 | 新增 `t_count`；既有結果不變 | [報告](reports/005_t_count.md) |
+| 006 | A 百分比 | 新增 `a_percent`；既有結果不變 | [報告](reports/006_a_percent.md) |
 
 001、002 對應先前的 GC% 與 AT% 開發；當時未建立此格式的報告，可在 Git 歷史查看。
 
