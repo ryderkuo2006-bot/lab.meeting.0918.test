@@ -12,6 +12,7 @@
 | 5 | 我也想知道 A 和 T 是否平衡，像 G/C 那樣比較。 | `at_skew` | [報告](008_at_skew.md) | `runs/008_at_skew/` |
 | 6 | 請標出 GC% 比 50% 高或低多少。 | `gc_deviation_pp` | [報告](009_gc_deviation_pp.md) | `runs/009_gc_deviation_pp/` |
 | 7 | 哪條最長？加上長度排名，但不要改變原本列順序。 | `length_rank` | [報告](010_length_rank.md) | `runs/010_length_rank/` |
+| 8 | 再加上 GC 含量排名，同分也要保留。 | `gc_rank` | [報告](011_gc_rank.md) | `runs/011_gc_rank/` |
 
 ## 更新順序
 
