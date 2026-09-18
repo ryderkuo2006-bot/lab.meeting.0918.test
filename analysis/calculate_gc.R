@@ -65,6 +65,11 @@ results$a_percent <- round(results$a_count / sequence_length_bp * 100, 2)
 # T 百分比：T / 序列長度 × 100，取兩位小數
 results$t_percent <- round(results$t_count / sequence_length_bp * 100, 2)
 
+# A/T 平衡：(A − T) / (A + T)，取四位小數；分母為零時 NA，不是百分比
+results$at_skew <- NA_real_
+has_at <- at_count > 0L
+results$at_skew[has_at] <- round((results$a_count[has_at] - results$t_count[has_at]) / at_count[has_at], 4)
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)

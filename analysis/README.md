@@ -50,5 +50,6 @@ Rscript analysis/calculate_gc.R runs/003_gc_skew > runs/003_gc_skew/run.log 2>&1
 - `t_count`：整數計數。
 - `a_percent`：A / 序列長度 × 100，取兩位小數。
 - `t_percent`：T / 序列長度 × 100，取兩位小數。
+- `at_skew`：(A − T) / (A + T)，取四位小數；分母為零時 NA，不是百分比。
 
 每次保留既有欄位，新增欄位放在表格尾端。詳見 [十次模擬總覽](../reports/simulation_10.md)。
