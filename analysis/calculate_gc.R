@@ -73,6 +73,9 @@ results$at_skew[has_at] <- round((results$a_count[has_at] - results$t_count[has_
 # GC 與 50% 的差距：GC% − 50，單位是百分點；50% 只是示範比較基準
 results$gc_deviation_pp <- round(gc_count / sequence_length_bp * 100 - 50, 2)
 
+# 序列長度排名：長度由大至小排名；同分同名次，下一名跳號；原始列順序不變
+results$length_rank <- rank(-sequence_length_bp, ties.method = "min")
+
 # 指定 run 資料夾時，保留本機中間資料與執行環境。
 if (!is.null(run_dir)) {
   dir.create(run_dir, recursive = TRUE, showWarnings = FALSE)
